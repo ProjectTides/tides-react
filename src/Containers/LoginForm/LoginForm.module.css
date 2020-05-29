@@ -1,0 +1,57 @@
+.LoginForm {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 2px #aaa;
+  background-color: #eee;
+  border-radius: 6px;
+}
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.InputWrapper label {
+  margin-bottom: 5px;
+}
+
+.FormControl {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  width: -webkit-fill-available;
+}
+
+.LoginButton {
+  cursor: pointer;
+  outline: none;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: rgb(7, 105, 157);
+  color: white;
+  border: 1px solid rgb(7, 105, 157);
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.forgotPasswordWrapper {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.forgotPassword {
+  color: #777;
+  font-size: 12px;
+  text-decoration: none;
+}
+.forgotPassword:hover {
+  text-decoration: underline;
+}
