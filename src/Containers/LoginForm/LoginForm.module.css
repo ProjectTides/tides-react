@@ -1,3 +1,7 @@
+.Page {
+  text-align: center;
+  margin-top: 90px;
+}
 .LoginForm {
   width: 400px;
   margin-left: auto;

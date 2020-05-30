@@ -1,0 +1,18 @@
+.Navbar {
+  padding: 15px 30px;
+  background-color: #eee;
+  box-shadow: 0 0 4px #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Logo {
+  font-size: 24px;
+}
+.Menu a {
+  color: #444;
+  text-decoration: none;
+}
+.Menu a:hover {
+  color: #222;
+}

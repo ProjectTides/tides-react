@@ -1,18 +1,32 @@
 import React from 'react';
 import styles from './App.module.css';
 import LoginForm from './Containers/LoginForm/LoginForm';
-import { Redirect } from "react-router-dom";
+import Dashboard from './Components/Dashboard/Dashboard';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+
+const Routes = () => {
+  return (
+    <Switch>
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/" component={LoginForm} />
+    </Switch>
+  );
+};
 
 const App = () => {
-  let user = null;
-  if (user) {
-    return <Redirect to="/dashboard" />;
-  }
   return (
-    <div className={styles.App}>
-      <h1>Welcome to Project Tides</h1>
-      <LoginForm />
-    </div>
+    <Router>
+      <div>
+        <Routes />
+      </div>
+    </Router>
   );
 }
 

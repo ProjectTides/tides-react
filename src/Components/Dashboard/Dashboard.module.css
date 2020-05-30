@@ -1,0 +1,32 @@
+.MessagesFrame {
+  width: 100vw;
+  height: 90vh - 60px;
+}
+.MessageSendForm {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 15px;
+}
+.FormControl {
+  padding: 12px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  width: -webkit-fill-available;
+}
+.SendButton {
+  cursor: pointer;
+  outline: none;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: rgb(7, 105, 157);
+  color: white;
+  border: 1px solid rgb(7, 105, 157);
+  padding: 8px 20px;
+  font-size: 16px;
+}
