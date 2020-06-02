@@ -1,6 +1,10 @@
 .MessagesFrame {
   width: 100vw;
-  height: 90vh - 60px;
+  position: fixed;
+  bottom: 90px;
+}
+.MessagesWrapper {
+  display: flex;
 }
 .MessageSendForm {
   bottom: 0;
@@ -9,6 +13,7 @@
   display: flex;
   width: -webkit-fill-available;
   padding: 15px;
+  background-color: #eee;
 }
 .FormControl {
   padding: 12px 12px;
@@ -29,4 +34,5 @@
   border: 1px solid rgb(7, 105, 157);
   padding: 8px 20px;
   font-size: 16px;
+  margin-left: 15px;
 }
