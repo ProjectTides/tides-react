@@ -2,14 +2,13 @@ import React from 'react';
 import styles from './App.module.css';
 import LoginForm from './Containers/LoginForm/LoginForm';
 import Dashboard from './Components/Dashboard/Dashboard';
-
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
-  Redirect
 } from 'react-router-dom';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from '@apollo/react-hooks';
 
 const Routes = () => {
   return (
@@ -21,12 +20,17 @@ const Routes = () => {
 };
 
 const App = () => {
+  const client = new ApolloClient({
+    uri: 'http://localhost:4000/api',
+  });
   return (
-    <Router>
-      <div>
-        <Routes />
-      </div>
-    </Router>
+    <ApolloProvider client={client}>
+      <Router>
+        <div>
+          <Routes />
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
