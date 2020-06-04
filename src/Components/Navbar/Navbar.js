@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className={styles.Menu}>
         <div>
-          <a href="#">Logout</a>
+          <Link to="/">Logout</Link>
         </div>
       </div>
     </div>
