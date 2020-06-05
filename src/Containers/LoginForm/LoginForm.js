@@ -7,12 +7,12 @@ import { gql } from "apollo-boost";
 
 const LOGIN_USER_VIA_EMAIL = gql`
 	mutation loginUserViaEmail($email: String!, $password: String!) {
-    loginUserViaEmail(email: $email, password: $password) {
-      id
-      name
-      email
-    }
-  }
+		loginUserViaEmail(email: $email, password: $password) {
+			id
+			name
+			email
+		}
+	}
 `;
 
 const LoginForm = () => {
@@ -61,7 +61,7 @@ const LoginForm = () => {
 				{loginError &&
 					<div className={styles.LoginError}>
 						Invalid user name or password
-          </div>
+					</div>
 				}
 				<form className={styles.FormWrapper} onSubmit={handleSubmit}>
 					<div className={styles.InputWrapper}>
