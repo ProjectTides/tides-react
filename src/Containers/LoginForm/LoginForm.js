@@ -21,8 +21,6 @@ const LoginForm = () => {
   const [loginUserViaEmail, { called, data }] = useLazyQuery(LOGIN_USER_VIA_EMAIL);
 
   const verifyUser = (res) => {
-    console.log("data");
-    console.log(res.data);
     const userDetails = res.data.loginUserViaEmail;
     if (!userDetails) {
       // show error and return false;
