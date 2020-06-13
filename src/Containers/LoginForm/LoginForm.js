@@ -77,7 +77,7 @@ const LoginForm = () => {
 					</div>
 				</form>
 				<div className={styles.forgotPasswordWrapper}>
-					<a href="#" className={styles.forgotPassword}>Forgot password?</a>
+					<a href="#" id="forgotPassword" className={styles.forgotPassword}>Forgot password?</a>
 				</div>
 			</div>
 
