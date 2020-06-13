@@ -3,11 +3,11 @@ import './Message.css';
 // import styles from './Message.module.css';
 
 const Message = (props) => {
-  let classes = props.message.type === 'sent' ? 'MessageBox Sent' : 'MessageBox Received'
+  let classes = props.message.flow === 'OUTBOUND' ? 'MessageBox Sent' : 'MessageBox Received'
   return (
     <div>
       <div className={classes}>
-        <p>{props.message.content}</p>
+        <p>{props.message.body}</p>
       </div>
     </div>
   );
