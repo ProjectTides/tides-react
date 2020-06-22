@@ -1,8 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![](https://github.com/ProjectTides/tides-react/workflows/Continuous%20Integration/badge.svg)
-[![Code coverage badge](https://img.shields.io/codecov/c/github/ProjectTides/tides-react/master.svg)](https://codecov.io/gh/glific/glific/branch/master)
-
+<!-- [![Code coverage badge](https://img.shields.io/codecov/c/github/ProjectTides/tides-react/master.svg)](https://codecov.io/gh/glific/glific/branch/master) -->
 
 
 ## Installation
