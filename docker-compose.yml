@@ -1,12 +1,12 @@
 version: '3.8'
-services:
-    tides-react:
-        container_name: tides-react
-        build:
+services: 
+    frontend:
+        container_name: frontend
+        build: 
             context: .
-        volumes:
-            - .:/usr/app/
-            - /usr/app/node_modules
+            dockerfile: Dockerfile.dev
         ports:
-            - 3000:3000
-
+            - "3000:3000"        
+        volumes: 
+            - ./:/frontend/
+            - /frontend/node_modules

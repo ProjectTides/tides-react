@@ -1,0 +1,23 @@
+# get the base node image
+FROM node:alpine as builder
+
+# set the working dir for container
+WORKDIR /frontend
+
+COPY . .
+RUN npm install react-scripts -g --silent
+RUN yarn install
+# RUN yarn run build
+
+# # copy the json file first
+# COPY ./package.json /frontend
+
+# # install npm dependencies
+# RUN yarn install
+
+# # copy other project files
+# COPY . .
+EXPOSE 3000
+
+# build the folder
+CMD [ "yarn", "run", "start" ]
